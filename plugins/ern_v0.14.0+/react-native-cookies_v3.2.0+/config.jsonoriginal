@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/__NAME__",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/__NAME__/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "__NAME__/__NAME__.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "lib__NAME__.a",
+              "target": "__NAME__"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

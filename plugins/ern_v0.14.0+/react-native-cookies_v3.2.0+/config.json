@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNCookieManagerIOS",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNCookieManagerIOS/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNCookieManagerIOS/RNCookieManagerIOS.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNCookieManagerIOS.a",
+              "target": "RNCookieManagerIOS"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
