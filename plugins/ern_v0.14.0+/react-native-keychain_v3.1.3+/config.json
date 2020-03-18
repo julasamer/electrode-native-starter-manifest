@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RNKeychain",
-        "source": "ios/**"
+        "source": "RNKeychainManager/**"
       }
     ],
     "pbxproj": {
