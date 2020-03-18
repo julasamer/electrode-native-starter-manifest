@@ -17,7 +17,7 @@
       "addProject": [
         {
           "group": "Libraries",
-          "path": "RNKeychain/RNKeychain.xcodeproj",
+          "path": "RNKeychain.xcodeproj",
           "staticLibs": [
             {
               "name": "libRNKeychain.a",
