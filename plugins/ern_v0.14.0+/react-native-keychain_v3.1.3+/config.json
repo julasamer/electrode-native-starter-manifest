@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNKeychain",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNKeychain/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNKeychain/RNKeychain.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNKeychain.a",
+              "target": "RNKeychain"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
