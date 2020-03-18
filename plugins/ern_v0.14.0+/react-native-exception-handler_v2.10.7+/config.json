@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/ReactNativeExceptionHandler",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/ReactNativeExceptionHandler/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "ReactNativeExceptionHandler/ReactNativeExceptionHandler.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libReactNativeExceptionHandler.a",
+              "target": "ReactNativeExceptionHandler"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
