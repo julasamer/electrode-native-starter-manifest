@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/JailMonkey",
-        "source": "JailMonkey/**"
+        "source": "**"
       }
     ],
     "pbxproj": {
