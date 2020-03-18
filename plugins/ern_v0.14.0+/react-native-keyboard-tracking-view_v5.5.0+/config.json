@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/KeyboardTrackingView",
-        "source": "ios/**"
+        "source": "lib/**"
       }
     ],
     "pbxproj": {
