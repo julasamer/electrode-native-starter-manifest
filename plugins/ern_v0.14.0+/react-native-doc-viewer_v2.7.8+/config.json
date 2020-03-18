@@ -6,22 +6,22 @@
   "ios": {
     "copy": [
       {
-        "dest": "{{{projectName}}}/Libraries/__NAME__",
+        "dest": "{{{projectName}}}/Libraries/RNReactNativeDocViewer",
         "source": "ios/**"
       }
     ],
     "pbxproj": {
       "addHeaderSearchPath": [
-        "\"$(SRCROOT)/{{{projectName}}}/Libraries/__NAME__/**\""
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNReactNativeDocViewer/**\""
       ],
       "addProject": [
         {
           "group": "Libraries",
-          "path": "__NAME__/__NAME__.xcodeproj",
+          "path": "RNReactNativeDocViewer/RNReactNativeDocViewer.xcodeproj",
           "staticLibs": [
             {
-              "name": "lib__NAME__.a",
-              "target": "__NAME__"
+              "name": "libRNReactNativeDocViewer.a",
+              "target": "RNReactNativeDocViewer"
             }
           ]
         }
