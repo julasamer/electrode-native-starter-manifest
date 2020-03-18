@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RNKeychain",
-        "source": "RNKeychainManager/**"
+        "source": "*"
       }
     ],
     "pbxproj": {
@@ -17,7 +17,7 @@
       "addProject": [
         {
           "group": "Libraries",
-          "path": "RNKeychain.xcodeproj",
+          "path": "RNKeychain/RNKeychain.xcodeproj",
           "staticLibs": [
             {
               "name": "libRNKeychain.a",
