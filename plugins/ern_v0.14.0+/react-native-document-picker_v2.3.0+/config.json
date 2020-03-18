@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNDocumentPicker",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNDocumentPicker/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNDocumentPicker/RNDocumentPicker.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNDocumentPicker.a",
+              "target": "RNDocumentPicker"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
