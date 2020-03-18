@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/KeyboardTrackingView",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/KeyboardTrackingView/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "KeyboardTrackingView/KeyboardTrackingView.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libKeyboardTrackingView.a",
+              "target": "KeyboardTrackingView"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
