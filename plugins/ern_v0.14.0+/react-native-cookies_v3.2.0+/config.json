@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RNCookieManagerIOS",
-        "source": "ios/RNCookieManagerIOS/**"
+        "source": "ios/**"
       }
     ],
     "pbxproj": {
