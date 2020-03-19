@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RNLocalAuth",
-        "source": "ios/**"
+        "source": "*"
       }
     ],
     "pbxproj": {
