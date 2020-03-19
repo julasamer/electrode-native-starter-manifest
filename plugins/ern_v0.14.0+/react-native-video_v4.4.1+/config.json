@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RCTVideo",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTVideo/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RCTVideo/RCTVideo.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRCTVideo.a",
+              "target": "RCTVideo"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
