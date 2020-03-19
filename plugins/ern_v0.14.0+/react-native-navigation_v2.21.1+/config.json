@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/ReactNativeNavigation",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/ReactNativeNavigation/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "ReactNativeNavigation/ReactNativeNavigation.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libReactNativeNavigation.a",
+              "target": "ReactNativeNavigation"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
