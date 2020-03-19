@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RNFetchBlob",
-        "source": "ios/**"
+        "source": "ios/*"
       }
     ],
     "pbxproj": {
