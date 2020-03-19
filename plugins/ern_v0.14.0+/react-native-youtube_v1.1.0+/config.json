@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RCTYouTube",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RCTYouTube/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RCTYouTube/RCTYouTube.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRCTYouTube.a",
+              "target": "RCTYouTube"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
