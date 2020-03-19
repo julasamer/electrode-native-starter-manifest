@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RCTYouTube",
-        "source": "ios/**"
+        "source": "*"
       }
     ],
     "pbxproj": {
