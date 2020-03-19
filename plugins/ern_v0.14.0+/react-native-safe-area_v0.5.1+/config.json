@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNSafeArea",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNSafeArea/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNSafeArea/RNSafeArea.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNSafeArea.a",
+              "target": "RNSafeArea"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
