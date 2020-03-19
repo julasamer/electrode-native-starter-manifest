@@ -7,7 +7,7 @@
     "copy": [
       {
         "dest": "{{{projectName}}}/Libraries/RNNotifications",
-        "source": "ios/**"
+        "source": "RNNotifications/*"
       }
     ],
     "pbxproj": {
