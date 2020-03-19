@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNPasscodeStatus",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNPasscodeStatus/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNPasscodeStatus/RNPasscodeStatus.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNPasscodeStatus.a",
+              "target": "RNPasscodeStatus"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
