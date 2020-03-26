@@ -1,0 +1,14 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/SKMattermostApi",
+        "source": "IOS/*"
+      }
+    ]
+  }
+}
