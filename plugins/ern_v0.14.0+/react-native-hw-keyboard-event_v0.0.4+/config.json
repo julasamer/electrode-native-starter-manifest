@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNHWKeyboardEvent",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNHWKeyboardEvent/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNHWKeyboardEvent/RNHWKeyboardEvent.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNHWKeyboardEvent.a",
+              "target": "RNHWKeyboardEvent"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
