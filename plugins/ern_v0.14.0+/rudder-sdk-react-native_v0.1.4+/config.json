@@ -1,0 +1,31 @@
+{
+  "android": {
+    "root": "android",
+    "dependencies": []
+  },
+  "ios": {
+    "copy": [
+      {
+        "dest": "{{{projectName}}}/Libraries/RNRudderSdk",
+        "source": "ios/**"
+      }
+    ],
+    "pbxproj": {
+      "addHeaderSearchPath": [
+        "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNRudderSdk/**\""
+      ],
+      "addProject": [
+        {
+          "group": "Libraries",
+          "path": "RNRudderSdk/RNRudderSdk.xcodeproj",
+          "staticLibs": [
+            {
+              "name": "libRNRudderSdk.a",
+              "target": "RNRudderSdk"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
